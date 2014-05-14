@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="CardIOPGPlugin"
+      version="0.2.9-dev">
+
+    <name>CardIOPGPlugin</name>
+    <description>card.io Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>phonegap,cardio</keywords>
+ 
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+        <feature name="CardIOPGPlugin">
+            <param name="ios-package" value="CardIOPGPlugin"/>
+        </feature>
+        </config-file>
+
+        <js-module src="www/CardIOPGPlugin.js" name="card_io">
+            <clobbers target="card_io" />
+        </js-module>
+
+    <header-file src="src/ios/CardIOPGPlugin.h" />
+    <source-file src="src/ios/CardIOPGPlugin.m" />
+
+    </platform>
+
+</plugin>
