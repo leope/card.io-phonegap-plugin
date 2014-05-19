@@ -22,13 +22,13 @@ public class CardIOPGPlugin extends Plugin {
     public PluginResult execute(String action, JSONArray args, String callbackId) {
         try {
             if (action.equals("scan")) {
-                this.scan();   
+                this.scan(args,callbackId);   
             } 
             else if (action.equals("canScan")) {
-                this.canScan();   
+                this.canScan(args,callbackId);   
             }
             else if (action.equals("version")) {
-                this.version();
+                this.version(args,callbackId);
             }
             else {
                 return new PluginResult(PluginResult.Status.INVALID_ACTION);
@@ -40,7 +40,7 @@ public class CardIOPGPlugin extends Plugin {
 
     private PluginResult scan(JSONArray args, String callbackId) {
         try {
-            
+                return new PluginResult(PluginResult.Status.OK, "demo");
             } 
             else {
                 return new PluginResult(PluginResult.Status.INVALID_ACTION);
@@ -52,7 +52,7 @@ public class CardIOPGPlugin extends Plugin {
     
     private PluginResult version() {
         try {
-            
+                return new PluginResult(PluginResult.Status.OK, "demo");
             } 
             else {
                 return new PluginResult(PluginResult.Status.INVALID_ACTION);
@@ -64,7 +64,7 @@ public class CardIOPGPlugin extends Plugin {
 
     private PluginResult canScan(String action, JSONArray args, String callbackId) {
         try {
-            
+                return new PluginResult(PluginResult.Status.OK, "demo");
             } 
             else {
                 return new PluginResult(PluginResult.Status.INVALID_ACTION);
