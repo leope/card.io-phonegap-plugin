@@ -1,10 +1,3 @@
-//
-//  CardIOPGPlugin.h
-//
-//  Copyright 2013 PayPal Inc.
-//  MIT licensed
-//
-
 #import <Cordova/CDV.h>
 #import "CardIO.h"
 

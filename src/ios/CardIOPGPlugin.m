@@ -1,12 +1,4 @@
-//
-//  CardIOPGPlugin.m
-//
-//  Copyright 2013 PayPal Inc.
-//  MIT licensed
-//
-
 #import "CardIOPGPlugin.h"
-
 #pragma mark -
 
 @interface CardIOPGPlugin ()
