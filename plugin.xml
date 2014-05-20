@@ -39,7 +39,7 @@
             <clobbers target="card_io" />
         </js-module>
 
-        <source-file src="src\android\CardIOPGPlugin.java" target-dir="src/org/apache/cordova/plugin"/>
+        <source-file src="src/android/CardIOPGPlugin.java" target-dir="src/org/apache/cordova/plugin"/>
 
     </platform>
 
