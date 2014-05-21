@@ -67,12 +67,16 @@ public class CardIOPGPlugin extends CordovaPlugin {
             if (data != null && data.hasExtra(CardIOActivity.EXTRA_SCAN_RESULT)) {
                 CreditCard scanResult = data.getParcelableExtra(CardIOActivity.EXTRA_SCAN_RESULT);
                 try {
-                    this.result.put("cardNumber", scanResult.cardNumber);
+                    this.result.put("card_number", scanResult.cardNumber);
                     this.result.put("redacted_card_number", scanResult.getRedactedCardNumber());
 
                     if (scanResult.isExpiryValid()) {
                         this.result.put("expiry_month", scanResult.expiryMonth);
                         this.result.put("expiry_year", scanResult.expiryYear);
+                    }
+
+                    if (scanResult.getCardType() != null) {
+                        this.result.put("card_type", scanResult.getCardType());
                     }
 
                     if (scanResult.cvv != null) {
